@@ -1,0 +1,209 @@
+@font-face {
+    font-family: Outfit;
+    src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: Outfit;
+    font-weight:400 ;
+    src: url("./assets/fonts/outfit/static/Outfit-Regular.ttf");
+}
+@font-face {
+    font-family: Outfit;
+    font-weight:600;
+    src: url("./assets/fonts/outfit/static/Outfit-Medium.ttf");
+}
+@font-face {
+    font-family: Outfit;
+    font-weight:700;
+    src: url("./assets/fonts/outfit/static/Outfit-Bold.ttf");
+}
+
+@font-face {
+    font-family: YoungSerif;
+    font-weight: 400;
+    src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 0;
+    /*height: 100vh;*/
+    background-color: hsl(30, 54%, 90%);
+    color: black;
+}
+
+.img-container {
+    width: auto;
+    max-width: 100%;
+    padding: 0;
+
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+.card{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+    padding: 50px;
+    max-width: 600px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /*max-height: 800px;*/
+    /*text-align: center;*/
+}
+
+.description{
+    text-align: left;
+}
+
+.description h1{
+    font-family: YoungSerif;
+    font-weight: 400;
+    color: black;
+}
+
+.description p{
+    font-family: Outfit;
+    font-weight: lighter;
+    font-size: 16px;
+    color: hsl(24, 5%, 18%);
+}
+
+/*-----------------------------------prepare-time Tab----------------------------------*/
+.prepare-time{
+    text-align: left;
+    background-color: hsl(330, 100%, 98%);
+    padding: 15px;
+    font-family: Outfit;
+    border-radius: 15px;
+}
+
+.prepare-time h2{
+    font-weight: bold;
+    color: hsl(332, 51%, 32%);
+}
+
+.prepare-time ul {
+    padding-left: 20px;
+    color: hsl(332, 51%, 32%);
+}
+
+.prepare-time ul b{
+    padding-left: 20px;
+}
+.prepare-time li {
+    margin-bottom: 10px; /* Khoảng cách giữa các mục */
+    color: hsl(24, 5%, 18%);
+}
+
+.prepare-time li::marker{
+    color: hsl(332, 51%, 32%);
+}
+
+/*-----------------------------------ingredient Tab----------------------------------*/
+.ingredient{
+    text-align: left;
+    font-family: Outfit;
+}
+
+.ingredient h2{
+    font-family: YoungSerif;
+    font-weight: lighter;
+    color: hsl(14, 45%, 36%);
+}
+.ingredient li::marker{
+    color:hsl(14, 45%, 36%) ;
+
+}
+
+.ingredient li{
+    margin-bottom: 10px; /* Khoảng cách giữa các mục */
+    color: hsl(24, 5%, 18%);
+    padding-left: 20px;
+}
+
+
+/*-----------------------------------instructions Tab----------------------------------*/
+.instructions{
+    font-family: Outfit;
+    text-align: left;
+    border-top-style: solid ;
+    border-bottom-style: solid;
+    border-color: hsl(30, 18%, 87%);
+}
+
+.instructions h2{
+    font-family: YoungSerif;
+    font-weight: lighter;
+    color: hsl(14, 45%, 36%);
+}
+
+.instructions li{
+    margin-bottom: 10px; /* Khoảng cách giữa các mục */
+    color: hsl(24, 5%, 18%);
+    padding-left: 20px;
+}
+
+.instructions li b{
+    color: hsl(30, 10%, 34%);
+    font-weight: 700;
+}
+
+.instructions li::marker{
+    color:hsl(14, 45%, 36%) ;
+    font-weight: bold;
+}
+
+/*-----------------------------------nutrition Tab----------------------------------*/
+.nutrition{
+    text-align: left;
+    font-family: Outfit;
+}
+
+.nutrition h2{
+    font-family: YoungSerif;
+    font-weight: lighter;
+    color: hsl(14, 45%, 36%);
+}
+
+.nutrition p {
+    font-weight: lighter;
+    font-size: 16px;
+    color: hsl(24, 5%, 18%);
+}
+
+/*Table*/
+table{
+    width: 100%;
+    padding-left: 50px;
+    border-collapse: collapse;
+}
+
+td{
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding:15px 40px;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.nul{
+    font-weight: 400;
+}
+
+.nul-value{
+    font-weight: bold;
+    color: hsl(14, 45%, 36%);
+}
+
